@@ -1,0 +1,48 @@
+{
+  "name": "async-process-limit",
+  "description": "This library can be used in the 'NodeJs', 'Browser' and 'Espruino' , but platform need support 'Promise' or 'async/await' only.",
+  "version": "0.0.1",
+  "author": {
+    "name": "aisanjiaomiao",
+    "email": "a15239840166@outlook.com"
+  },
+  "scripts": {
+    "normal_demo": "node ./example/normal_demo.js",
+    "async_demo": "node ./example/async_demo.js",
+    "retry_demo": "node ./example/retry_demo.js",
+    "espruino_demo": "node ./example/espruino_demo.js",
+    "promises_demo": "node ./example/promises_demo.js",
+    "concat_demo": "node ./example/concat_demo.js",
+    "push_demo": "node ./example/push_demo.js", 
+    "async_fn_list_demo": "node ./example/async_fn_list_demo.js"
+  },
+  "contributors": [
+    {
+      "name": "aisanjiaomiao",
+      "email": "a15239840166@outlook.com"
+    }
+  ],
+  "main": "index.js",
+  "dependencies": {},
+  "keywords": [
+    "promise",
+    "async",
+    "async-task",
+    "async-limit",
+    "process-limit",
+    "async-process-limit",
+    "ESP32",
+    "ESP8266",
+    "espruino"
+  ],
+  "repository": {
+    "type": "async-process-limit",
+    "url": "https://github.com/aisanjiaomiao/async-process-limit"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {}
+}
