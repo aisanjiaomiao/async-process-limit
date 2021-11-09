@@ -34,7 +34,7 @@ const q=new Queue({
 
 ## Parameters
 
-`new TinyQueueTask(options)`
+`new Queue(options)`
 
 ### options
 
