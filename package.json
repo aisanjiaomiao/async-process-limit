@@ -14,6 +14,7 @@
     "promises_demo": "node ./example/promises_demo.js",
     "concat_demo": "node ./example/concat_demo.js",
     "push_demo": "node ./example/push_demo.js", 
+    "num_range_demo": "node ./example/num_range_demo.js",
     "async_fn_list_demo": "node ./example/async_fn_list_demo.js"
   },
   "contributors": [
