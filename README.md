@@ -129,7 +129,7 @@ const queue = new Queue({
 });
 ```
 
-### PromiseArray
+### [PromiseArray](example/promises_demo.js)
 
 ```js
 const queue = new Queue({
@@ -153,4 +153,25 @@ const queue = new Queue({
 
 queue.push(...array);
 queue.concat(array);
+```
+
+### [Download Files Demo](example/download_demo.js)
+
+```js
+const queue = new Queue({
+    list: [...urls],
+    start: true,
+    limit: 5,
+    retry: 3,
+    async process(val, taskId) {
+        console.log("taskId", taskId, "download:", val);
+        let filePath = path.join(__dirname, path.basename(val));
+        if (fs.existsSync(filePath)) return; 
+        await dowanload(val, filePath);
+        console.log(val, '=====>', filePath);
+    },
+    error(e) {
+        console.error(e)
+    }
+});
 ```
