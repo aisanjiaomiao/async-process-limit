@@ -8,6 +8,7 @@ module.exports = class Queue {
         this._start = config.start == true;
         this._retry = config.retry || 0;
         this._safety_lock = false;
+        this._finish = config.finish || (() => { });
         this.reset();
         if (this._start) this.check();
     }
@@ -33,7 +34,10 @@ module.exports = class Queue {
         if (!this._start || !this._list.length) return;
         let self = this;
         let next = (taskId) => {
-            if (!self._start || !self._list.length || self._safety_lock || !self._processFlag[taskId]) return;
+            if (!self._start || !self._list.length || self._safety_lock || !self._processFlag[taskId]) {
+                if (!Object.keys(self._processFlag).find(k => self._processFlag[k] == QUEUE_STATUS.RUNING)) self._finish();
+                return;
+            }
             self._safety_lock = true;
             let item = self._list.shift();
             self._safety_lock = false;
