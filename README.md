@@ -42,6 +42,7 @@ This library support follow options:
 
 - `process`: A function that will be called when a process ( `Callback(cursorValue, taskId)` )
 - `error`: A function that will be called when on error ( `Callback(Error, cursorValue, tryCount, taskId)` )
+- `finish`: A function that will be called when on finish 
 - `list`: A array set process value list ( Default: `[]` )
 - `start`: A boolean set execute now ( Default: `false` )
 - `limit`: A number set task max length ( Default: `1` )
@@ -64,6 +65,7 @@ Stop and empty the queue immediately.
 ### `q.push(item1,item2,item3...)`
 
 ### `q.concat([item1,item2,item3...])`
+ 
 
 ## example
 
