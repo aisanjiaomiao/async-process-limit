@@ -1,7 +1,7 @@
 {
   "name": "async-process-limit",
   "description": "This library can be used in the 'NodeJs', 'Browser' and 'Espruino' , but platform need support 'Promise' or 'async/await' only.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "aisanjiaomiao",
     "email": "a15239840166@outlook.com"

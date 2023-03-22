@@ -58,7 +58,7 @@ start forEach and process
 
 Stops the queue. can be resumed with `q.start()`.
 
-### `q.end()`
+### `q.end()` or `q.clear()`
 
 Stop and empty the queue immediately.
 
@@ -66,6 +66,7 @@ Stop and empty the queue immediately.
 
 ### `q.concat([item1,item2,item3...])`
  
+### `q.setLimit(limit)`
 
 ## example
 
